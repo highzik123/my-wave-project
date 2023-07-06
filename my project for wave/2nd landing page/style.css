@@ -1,0 +1,258 @@
+/* @font-face {
+    font-family: 'amaze';
+    src: url(Charmist\ DEMO.ttf);
+}
+
+@font-face {
+    font-family: 'cool';
+    src: url(Modern\ Age\ Italic.ttf);
+}
+
+@font-face {
+    font-family: 'nice';
+    src: url(Starshines\ Italic.ttf);
+}
+ */
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: #d3b683; 
+} */
+
+
+
+
+/* .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589),rgba(225, 225, 255, 0.3)),url(WhatsApp\ Image\ 2023-06-12\ at\ 13.40.56.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    /* padding-right: 20px; */
+
+
+
+/* .signature{
+    
+    font-family: cool;
+    font-weight: 900;
+    color: beige;
+    padding-right: 660px;
+}
+.navbar { */
+    /* width: 85%;
+    margin: auto;
+    padding: 40px 0; */
+    /* font-family: cool; */
+    /* text-decoration: none;
+    display: flex; */
+    /* align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: cool;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: burlywood;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 1s;
+} */
+
+/* .navbar ul li:hover::after {
+  width: 100%; */
+  /* transform: perspective(50px); */
+/* }
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: larger;
+    color: beige;
+}
+
+H1{
+    font-family: amaze;
+}
+
+.DIY{
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.677);
+    font-family: amaze;
+}
+
+button{
+    width: 250px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px; */
+    /* font-family: nice; */
+    /* font-weight: bold;
+    border: 2px solid rgba(222, 184, 135, 0.693);
+    background: transparent;
+    color: beige;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: burlywood;
+    height: 100%;
+    width: 0; */
+    /* border-radius:25px; */
+    /* position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 1s
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+    font-family: cool;
+} */
+@font-face {
+    font-family: 'amaze';
+    src: url(Charmist\ DEMO.ttf);
+}
+
+@font-face {
+    font-family: 'cool';
+    src: url(Modern\ Age\ Italic.ttf);
+}
+
+@font-face {
+    font-family: 'nice';
+    src: url(Starshines\ Italic.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    display: grid;
+    background-color: #D3B683;
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+
+.g-1 {
+    background-color: #673217;
+    border-radius: 10px;
+    grid-area: 1/1/2/3;
+}
+.g-2 {
+    background-color: #094235;
+    border-radius: 10px;
+}
+.g-3 {
+    background-color: #15417E;
+    border-radius: 10px;
+    grid-area: 1/4/3/5;
+}
+.g-4 {
+    background-color: teal;
+    border-radius: 10px;
+}
+.g-5 {
+    background-color: #3B8979;
+    border-radius: 10px;
+    grid-area: 2/2/3/4;
+}
+
+button{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-family: nice;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color:white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.about{
+    color: azure;
+    font-family: nice;
+    font-weight: bold;
+}
+
+
+    
+
+@media screen and (max-width: 500px){
+    .grid-container{
+        background-color: grey;
+        height: fit-content;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 300px 150px 150px 260px 300px;
+    }
+    .g-1 {
+        grid-area: 1/1/2/2;
+    }
+    .g-2 {
+        grid-area: 2/1/3/2;
+    }
+    .g-3 {
+        grid-area: 3/1/4/2;
+    }
+    .g-4 {
+        grid-area: 4/1/5/2;
+    }
+    .g-5 {
+        grid-area: 5/1/6/2;
+    }
+}
+
+.nav1{
+    color: aliceblue;
+}
